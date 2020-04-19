@@ -144,6 +144,22 @@
             width: 85%;
         }
     }
+    .title {
+        &_left {
+            font-size: 16px;
+            line-height: 27px;
+        }
+    }
+    .consultation {
+        padding-top: 40px;
+        &__descr {
+            font-size: 15px;
+            margin-top: 60px;
+        }
+    }
+    .feed-form {
+        width: 90%;
+    }
 }
 
 @media (max-width: 319px) {
@@ -152,9 +168,24 @@
             font-size: 14px;
         }
     }
+    .feed-form {
+        width: 90%;
+        input {
+            height: 45px;
+        }
+    }
     .button {
-        width: 12px;
+        width: 120px;
         height: 17px;
         font-size: 8px;
+        &_main {
+            font-size: 12px;
+        }
+        &_submit {
+            width: 100%;
+            height: 4px;
+            font-size: 12px;
+        }
     }
+    
 }
