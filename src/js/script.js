@@ -1,7 +1,7 @@
-$(document).ready(function(){
+/* $(document).ready(function(){
     $('.carousel__inner').slick({
         speed: 1200,
-        /* adaptiveHeight: true, */
+        //adaptiveHeight: true, 
         prevArrow: '<button type="button" class="slick-prev"><img src="icons/arrow/arrow_left.svg"></button>',
         nextArrow: '<button type="button" class="slick-next"><img src="icons/arrow/arrow_right.svg"></button>',
         responsive: [
@@ -14,4 +14,24 @@ $(document).ready(function(){
             }    
         ]
       });
+  }); */
+
+  const slider = tns({
+    container: '.carousel__inner',
+    items: 1,
+    slideBy: 'page',
+    controls: false,
+    nav: false,
+    speed: 2000,
+    autoplay: true,
+    autoplayTimeout: 3500,
   });
+  
+  document.querySelector('.prev').addEventListener('click', function () {
+    slider.goTo('prev');
+  });
+
+  document.querySelector('.next').addEventListener('click', function () {
+    slider.goTo('next');
+  });
+
