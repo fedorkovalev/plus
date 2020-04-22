@@ -12,6 +12,24 @@
     }
 }
 
+@media (max-width: 1024px){
+    .carousel {
+        max-width: 740px;
+        &__inner {
+            margin: 0 auto;
+        }
+        .prev, .next {
+            display: none;
+        }
+    }
+    .tns-item {
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
 @media (max-width: 991px) {
     .container {
         width: 90%;
