@@ -16,27 +16,29 @@ $(document).ready(function(){
 }); */
 $('.carousel__inner').slick({
   speed: 1200,
+  autoplay: true,
+  autoplaySpeed: 2000,
   /* adaptiveHeight: true, */
   prevArrow: '<button type="button" class="slick-prev"><img src="icons/arrow/arrow_left.svg"></button>',
   nextArrow: '<button type="button" class="slick-next"><img src="icons/arrow/arrow_right.svg"></button>',
   responsive: [
       {
-          breakpoint: 992,
-          settings: {
-            dots: true,
-            arrows: false,
-          }
-      }    
-  ]
+        breakpoint: 992,
+        settings: {
+        dots: true,
+        arrows: false,
+        }
+      }, 
+  ] 
 });
 
-document.querySelector('.slick-prev').addEventListener('click', function () {
-  slider.goTo('slick-prev');
+/* document.querySelector('.slick-prev').addEventListener('click', function () {
+  slider.goTo('prev');
 });
 
 document.querySelector('.slick-next').addEventListener('click', function () {
-  slider.goTo('slick-next');
-});
+  slider.goTo('next');
+}); */
 
 $('ul.catalog__tabs').on('click', 'li:not(.catalog__tab_active)', function() {
   $(this)

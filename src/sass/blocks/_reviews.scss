@@ -1,0 +1,50 @@
+.reviews {
+    min-height: 947px;
+    padding-bottom: 71px;
+    &__wrapper {
+        margin-top: 70px;
+    }
+    hr {
+        background-color: #f6f6f6;
+        border-bottom: none;
+    }
+    &-item {
+        display: flex;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        &:nth-child(5) {
+            margin-bottom: 0;
+        }
+        &:nth-child(1) {
+            margin-top: 0;
+        }
+        &__img {
+            height: 169px;
+            width: 169px;
+        }
+        &__review {
+            margin-left: 62px;
+            padding-right: 60px
+        }
+        &__name {
+            font-size: 18px;
+            font-weight: 700;
+            color: $main-txt-color;
+        }
+        &__marathons {
+            font-size: 14px;
+            line-height: 14px;
+            font-weight: 300;
+            color: #646464;
+            margin-top: 10px;
+        }
+        &__text {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 18px;
+            color: $main-txt-color;
+            margin-top: 19px;
+        }
+    }
+    
+}
