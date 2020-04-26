@@ -44,6 +44,17 @@
         padding: 38px;
         min-height: 140px;
     }
+    .error {
+        border: 1px solid $main-color;
+    }
+    label.error {
+        border: none;
+        font-size: 14px;
+        font-weight: 700;
+        color: $main-txt-color;
+        text-align: center;
+        margin-bottom: 15px;
+    }
 }
 
 #consult, #order, #thanks {
