@@ -10,6 +10,15 @@
     .title {
         font-size: 27px;
     }
+    .pageup {
+        right: 10px;
+        img {
+            opacity: 1;
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
 }
 
 @media (max-width: 1024px){
